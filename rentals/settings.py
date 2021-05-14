@@ -31,6 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'signin.apps.SigninConfig',
+    'createaccount.apps.CreateaccountConfig',
+    'contact.apps.ContactConfig',
+    'about.apps.AboutConfig',
     'property.apps.PropertyConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -77,9 +81,9 @@ WSGI_APPLICATION = 'rentals.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
+        'NAME': 'rentalproject',
         'USER': 'postgres',
-        'PASSWORD': '#Raiden17',
+        'PASSWORD': 'Rentals1234',
         'HOST': 'localhost',
         'PORT': '5432',
     }
