@@ -1,5 +1,73 @@
 {% extends 'base.html' %}
 
 {% block content %}
-PROPERTY!
+<main>
+  <section class="py-5 text-center container bg-light">
+    <h1 class="text-center pt-3"> {{property.address}} </h1>
+    <p class="lead text-muted">{{property.summary}}
+    </p>
+    <div class="row py-lg-5">
+      <div class="col-lg-3 col-md-8 mx-auto">
+        <ul class="list-group">
+          <li class="list-group-item">Square Feet: <b>{{property.area}} ft<sup>2</sup></b></li>
+          <li class="list-group-item">Bedrooms:<b> {{property.bedrooms}}</b></li>
+          <li class="list-group-item">Bathrooms:<b> {{property.baths}}</b></li>
+          <li class="list-group-item">Monthly Rent:<b> {{property.price}}</b></li>
+          <li class="list-group-item"><b>Not Currently Available</b></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-md">
+            <img class="card-img-top" src="{{ property.curbside.url }}" height=300 width=200 />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-md">
+            <img class="card-img-top" src="{{ property.image1.url }}" height=300 width=200 />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-md">
+            <img class="card-img-top" src="{{ property.image2.url }}" height=300 width=200 />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-md">
+            <img class="card-img-top" src="{{ property.image3.url }}" height=300 width=200 />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-md">
+            <img class="card-img-top" src="{{ property.image4.url }}" height=300 width=200 />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-md">
+            <img class="card-img-top" src="{{ property.image5.url }}" height=300 width=200 />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-md">
+            <img class="card-img-top" src="{{ property.image6.url }}" height=300 width=200 />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-md">
+            <img class="card-img-top" src="{{ property.image7.url }}" height=300 width=200 />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-md">
+            <img class="card-img-top" src="{{ property.image8.url }}" height=300 width=200 />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 {% endblock %}

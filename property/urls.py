@@ -2,5 +2,5 @@ from . import views
 from django.urls import path
 
 urlpatterns = [
-    path('', views.property, name='propertyview')
+    path('<int:property_id>', views.property, name='propertyview'),
 ]
